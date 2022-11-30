@@ -68,9 +68,9 @@ function App() {
               Duration: {data.duration}
             </p>
             <p>
-              Direct link to download a video or audio:
+              Direct link to download a file:
             </p>
-            <a className="link" href={data.link}>LINK</a>
+            <a target='_blank' className="link" href={data.link}>LINK</a>
           </div>
           :
           <div/>
