@@ -1,11 +1,15 @@
 import youtube_dl
+from rest_framework.exceptions import ValidationError
 
 
 class YoutubeData:
 
     def __init__(self, url):
         with youtube_dl.YoutubeDL() as ydl:
-            self.data = ydl.extract_info(url, download=False)
+            try:
+                self.data = ydl.extract_info(url, download=False)
+            except Exception as e:
+                raise ValidationError({"message": 'Incorrect URL'})
 
     def video_downloader(self):
         video_link = [f['url'] for f in self.data['formats'] if f['acodec'] != 'none' and f['vcodec'] != 'none']
