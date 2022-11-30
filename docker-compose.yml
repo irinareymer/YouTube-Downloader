@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  backend:
+    container_name: backend
+    image: youtube_downloader/backend
+    build:
+      context: .
+      dockerfile: ./Dockerfile.backend
+    ports:
+      - "8000:8000"
+    networks:
+      - youtube_downloader_network
+  frontend:
+    container_name: frontend
+    image: youtube_downloader/frontend
+    build:
+      context: .
+      dockerfile: ./Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - youtube_downloader_network
+
+networks:
+  youtube_downloader_network:
