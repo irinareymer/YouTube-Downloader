@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.input-text {
+  width: 400px;
+}
+
+.button {
+  width: 150px;
+  height: 60px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #FF0000;
+  border-radius: 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: 900;
+}
