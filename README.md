@@ -1,4 +1,9 @@
 # YouTube-Downloader
+
+main [![YouTube Downloader CI](https://github.com/irinareymer/YouTube-Downloader/actions/workflows/youtube_ci.yml/badge.svg?branch=main)](https://github.com/irinareymer/YouTube-Downloader/actions/workflows/youtube_ci.yml)
+
+develop [![YouTube Downloader CI](https://github.com/irinareymer/YouTube-Downloader/actions/workflows/youtube_ci.yml/badge.svg?branch=develop)](https://github.com/irinareymer/YouTube-Downloader/actions/workflows/youtube_ci.yml)
+
 YouTube video and audio downloader.
 
 Downloader works in a web browser. 
